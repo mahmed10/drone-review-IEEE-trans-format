@@ -1,0 +1,77 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{comment}
+\usepackage{todonotes}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\bibliographystyle{ieeetr}
+\begin{document}
+
+
+% \renewcommand{\textcolor}[2]{#2}
+
+\title{Drone, Networking and  Machine Learning for Smart City Application: A Review\\
+{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+should not be used}
+\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+}
+
+\maketitle
+
+\begin{abstract}
+Unmanned Aerial Vehicle, alternatively known as the drone operates without any pilot on board. Starting with surveillance, disaster management, infrastructure monitoring, drones provide unparalleled opportunities to improve our daily life with a large scale IoT (Internet of thing) based applications. Nonetheless, the drone system is facing significant limitations regarding the autonomous operation, longer flight duration, large data collection on a single platform, obstacle avoidance, reliable real-time application, etc. In this review paper, we have summarized a few research works that have proposed solutions to these constraints. Besides, we have discussed recent machine learning-based drone applications that can increase our efficiency in numerous sectors. Moreover, we have analyzed different communication protocols and sensors that are being used with drones. We have also presented several drone-based challenges and datasets that may help the upcoming researchers in this field. Furthermore, we have also discussed the applications of drones in the current COVID-19 situation and the effects of pandemic on the overall drone industry.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+UAV, ummanned aerial vehicle, drone, inspection, tracking, autonomous navigation, safe landing, disaster management, supply chain, COVID-19.
+\end{IEEEkeywords}
+
+\input{section/intro}
+\input{section/networking}
+%\input{section/signalprocessing}
+\input{section/application}
+\input{section/dataset}
+\input{section/toolkit}
+\input{section/covid19}
+\input{section/challenge}
+\input{section/conclusion}
+
+%\subsection{Networking}
+
+%\subsection{Computer Vision}
+%Object Tracking, Data Augmentation
+
+%\subsection{Hardware platform}
+%something related to mechanical
+\bibliography{sample}
+
+\end{document}

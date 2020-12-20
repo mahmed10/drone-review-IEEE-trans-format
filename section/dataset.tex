@@ -1,0 +1,44 @@
+\section{Drone Related Dataset}
+\label{datasetsection}
+Drone with RGB cameras has a broad range of applications, including aerial photography, agriculture, civil construction inspection, and monitoring. Additionally, an autonomous understanding system of the visual data collected from these platforms is becoming highly demanding, thus increasingly bringing computer vision to drones. Some datasets regarding drone are provided below and summerized in Table~\ref{datatable}.
+
+\input{table/datasettable}
+
+\subsection{Visdrone}
+Visdrone is one of the large benchmark datasets that is prepared by a research team of Machine Learning and Data Mining Lab, Tianjin University, China. This dataset is related to computer vision and captured by a drone. Data were collected from 14 different sites in China. The dataset covers numerous weather and lighting conditions, reflecting various situations in our daily life. There are 10 labeled object categories (pedestrian, vehicles, bicycles, etc.), and density conditions are sparse and crowded scenes. There are two object detection tasks (detection from image and detection from video), and two object tracking tasks (single-object tracking and multi-object tracking). Based on this dataset, two competitions were organized, namely VisDrone 2018 and VisDrone 2019 in collaboration with ECCV 2018 and ICCV 2019, respectively. VisDrone 2020 will be held with a new difficulty, crowd counting.
+
+
+\subsection{Car parking lot dataset (CARPK)}
+Similar to the name of the dataset, the car parking lot dataset or CARPK concentrates on the number of cars parked in a parking lot. Therefore, vehicle detection and counting is the only challenge in this dataset. The dataset includes almost 90,000 annotated bounding boxes of cars. The dataset contains 4 different parking lot scenarios with drone view at an altitude of approximately 40 metres.
+
+\subsection{The Unmanned Aerial Vehicle Benchmark: Object Detection and Tracking (UAVDT)}
+The Unmanned Aerial Vehicle Benchmark: Object Detection and Tracking (UAVDT) consist of 10 hours of video data. Those frames are fully annotated with bounding boxes. Labels of those bounding boxes are vehicles such as car, truck, and bus. The primary task of the dataset is object detection, which can be either single object tracking or multiple object tracking.  The videos were shot in multiple lighting conditions (daylight, night, and fog). Different lighting conditions introduce different aspects. Daytime light introduces shadow interaction with the object. Whereas, night scene, with dim street lamplight, offers barely any information about texture. Meanwhile, frames captured at fog lose sharp details so that object contours disappear in the background.
+
+\subsection{Aerial Image Dataset for Emergency Response dataset (AIDAR)}
+
+This dataset consists of photographs for four different disaster events, such as flood, fire/smoke, traffic accidents, collapsed building/rubble disaster. Additionally, it also contains common cases that do not indicate the existence of a disaster. Besides, collecting images using their UAV platform (DJI Matric 100), the aerial photos of these types of disasters were obtained from various sources, such as twitter, bing images, websites of news agencies, google images, etc.
+
+\subsection{SafeUAV}
+
+The task of this dataset is to identify the condition of the landing ground, e.g., horizontal, vertical, or sloped. In short, whether a drone can land on that ground or not. In the SafeUAV dataset, data have been collected from two types of places. From Urban A and Urban B, this dataset covered 3.5 km$^2$ and 3.3 km$^2$, consisting of 4545 samples and 3592 samples from those areas. Similarly, from Suburban A and Suburban B, this dataset covered 1.7 km$^2$ and 1.1 km$^2$, consisting of 2458 samples and 1312 samples. This dataset consists of an RGB image, a precise depth measure for individual pixels. For ground truths of the label, the 3D model of the base have imperfections, such as containing several reconstruction inconsistencies. The actual output of the dataset, however, is still not pragmatic.
+
+\subsection{HighD}
+This dataset was created on German highways by filming the naturalistic trajectories of vehicles using a drone. The purpose of using a drone is to solve the problem of occlusions and get an aerial perspective view that is tough to get by grounded data. This dataset consists of more than 110 500 transportations with the truck and car class. The video was capture in six different places and at 4K resolution with 25 fps. Four types of maneuvers (free driving, vehicle following, critical maneuver, lane change) were also annotated in this dataset.
+
+\subsection{High Resolution UAV Dataset (HRUD)}
+This dataset was captured for information processing in the post-Hurricane Michael disaster scenario. There are around 2000 aerial photographs with semantic segmentation data annotation. Data were collected after Hurricane Michael. Three types of damage are labeled in this dataset (No Damage, Medium Damage, Major Damage).
+
+
+\subsection{Stanford Drone Dataset}
+
+The dataset consists of around 920 thousand frames, which includes approximately 19 thousand targets involving 11,200 pedestrians, 6,400 bicycle riders, 1,300 vehicles, 300 skaters, 200 golf carts, and 100 buses. This dataset aims to predict social etiquettes while a large number of people are on the street, which means the interactions between two targets and between target and space. Such as trajected of a pedestrian and a cyclist should not crossover. Based on this assumption, they tried to predict the trajectory of humans in different areas of the campus. There are 185 thousand annotated interactions between two targets and 40 thousand annotated interactions between a target and space. The dataset was collected from 8 different places of Standford University.
+
+
+\subsection{Autonomous Drone Racing Dataset}
+
+This dataset was created using a fisheye camera mounted on a drone. The Field-of-View of the camera was 170$^{\circ}$. The dataset is consists of gates used in a drone racing track. Data was captured by the frontal camera the drone and video quality was VGA. The data capture rate was 30 Hz. The primary motivation of the dataset is to develop an algorithm for an autonomous racing drone.
+
+
+\subsection{Crashes Itself!}
+
+In the field of autonomous drone navigation, very research work created a dataset, where a drone actually hit an obstacle. Most of the crash datasets are synthetically prepared. In this dataset, the researchers have crashed their drones for 11.5 thousand times. For video capturing purposes, they have used a Parrot Ar-Drone 2.0 with slight modification. Besides, a software was implanted on the drone so that it could autonomously crash into obstacles and recover from the consequences. Data is annotated as the positive class and negative class.

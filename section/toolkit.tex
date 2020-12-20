@@ -1,0 +1,51 @@
+\section{Drone Related Hardware}
+\label{toolkitsection}
+In real life, there are multiple constraints and restrictions. To successfully implement ideas, all of these limitations should be taken into consideration. Specifically, for using a deep learning-based approach on a drone, sensing systems, and communications design constraints should be investigated intensively~\cite{fraga2019review}. The hardware factors of a drone are shown in Fig~\ref{hardware}. These factors are discussed below.
+\begin{figure}[h!]
+\centering
+\includegraphics[width=.7\linewidth]{figure/hardware.eps}
+\caption{Factors need to be considered before using drone.}
+\label{hardware}
+\end{figure}
+\subsection{Communication Factors}
+The most important part of the drone is the communication system. RFID and WIFI are the most commonly used communication protocols for drones. Another popular alternative to these protocols is Bluetooth, as Bluetooth consumes less power then WIFI. But the advantage of WIFI over Bluetooth is the high data transmission and receiving rate. But both of these protocols can not be used for long-range communication. For that purpose, cellular networks can be used. Based on the communication range, frequency bandwidth, data transmission rate, and power consumption criteria, we need to select the communication protocol. There are many communication protocols, such as Zigbee, Z-wave, NFC (narrow field communication), etc. In Table~\ref{communicationprotocol}, we have provided a few communication protocols used for drone communication.
+\input{table/wireless}
+
+\subsection{Sensor Factors}
+Sensors play a crucial role in drone navigation and data capture. Those sensors help the drone to collect data from the surroundings. Using this knowledge, a drone can maintain its positions, decide how fast it is moving, and avoid barriers. Commonly used drone sensors are mentioned below.
+
+\textbf{RGB camera:} 
+The most commonly attached sensor in a drone is an RGB camera. An RGB camera is required to provide drone pilots with feedback. Besides, a range of creative and realistic applications are found with drone cameras these days. Among them, autonomous navigation, wildlife surveillance, weather forecasting, archaeological surveys, aerial photography are notable. Depending on the price, drone cameras can vary in quality and size.
+
+\textbf{Thermal camera:}
+A thermal camera can transform the drone into a versatile device that can be used in many sectors, such as quarrying, energy monitoring, health inspection, firefighting, etc. The thermal camera uses vision imaging technique that can sense and transform heat coming from virtually all objects and materials into photographs. 
+
+\textbf{Gyroscope:}
+Gyroscope is inexpensive and easy enough to fit into even inexpensive mini-drones. The gyroscopes work on the principle of angular momentum conservation. This device is used to measure or maintain orientation.
+
+\textbf{Accelerometers:}
+A drone's accelerometer operates in tandem with its gyroscope to determine changes in the drone's position and motion. The working principle of an accelerometer is based on the piezoelectric effect. A gyroscope can read rotational movements, whereas an accelerometer is better able to read linear motions along any axis. 
+
+\textbf{Tilt Sensor:}
+The tilt sensor is a hybrid sensor that consists of a gyroscope and an accelerometer. The tilt sensor can provide feedback into the flight-control device to maintain level flight.
+
+\textbf{Barometer:}
+Barometers are atmospheric pressure measuring instruments. By using the atmospheric pressure, a drone can determine it's altitude from the ground. 
+
+\textbf{GPS:}
+Global Positioning System is an essential part of commercial drones. It plays an important role in the field of autonomous navigation. The GPS sensor communicates with the GPS satellite and detects the position based on the satellite. Then the 3D position of the drone within a given geospatial reference network is calculated by triangulating the position of the drone with respect to the various GPS satellites.
+
+\textbf{Magnetometer:}
+A magnetometer, as its name suggests, measures the direction and force of a magnetic field. Using a magnetometer, a drone can determine the strength of the magnetic and electric field and change its route consequently.
+
+\textbf{IMU:}
+Inertial Measurement Units or also known as IMU is a combined package, that consists of accelerometers, magnetometers, and gyroscopes.
+
+\textbf{Sonar Sensor:}
+The Sonar sensor uses sound waves to detect the distance between an object and the drone. By using multiple sonar sensors, the drone can avoid obstacles towards its path.
+
+\subsection{Other Factors}
+Beside embedded sensors and communication systems, we need to consider a few other factors before buying a drone. Weight, size, and maximum payload of a drone is the most important parameters because flight time mostly depends on these specifications. A professional parcel delivering drone on average can lift weighing around 40 lbs. On the other hand, the average flight time of the majority of commercial drones is 20-30 minutes. Though flight time can be increased by using a powerful battery, it must be noted that the higher the battery strength, the heavier it becomes. The bottlenecks of battery technology are Li-ion, LiPolymer, etc. However, research is still going on for a long-life battery with reduced weight. The other two important specifications are the controlling system and the storage system. Commonly used microprocessors are based on ARM architecture. Considering all the criteria mentioned above, a list of drones used for the educational research purpose is provided in Table~\ref{dronetable}.
+\input{table/dronetable}
+
+%maybe table na top producing company https://www.businessinsider.com/drone-manufacturers-companies-invest-stocks
